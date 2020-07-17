@@ -13,8 +13,8 @@ const WorkTitle = styled("h1")`
 const Work = ({ projects, meta }) => (
     <>
         <Helmet
-            title={`Work | Prist, Gatsby & Prismic Starter`}
-            titleTemplate={`%s | Work | Prist, Gatsby & Prismic Starter`}
+            title={`Work | Manimul Portfolio`}
+            titleTemplate={`%s | Work | Manimul Portfolio`}
             meta={[
                 {
                     name: `description`,
@@ -22,7 +22,7 @@ const Work = ({ projects, meta }) => (
                 },
                 {
                     property: `og:title`,
-                    content: `Work | Prist, Gatsby & Prismic Starter`,
+                    content: `Work | Manimul Portfolio`,
                 },
                 {
                     property: `og:description`,
@@ -52,7 +52,7 @@ const Work = ({ projects, meta }) => (
         />
         <Layout>
             <WorkTitle>
-                Work
+                A selection of recent work
             </WorkTitle>
             <>
                 {projects.map((project, i) => (

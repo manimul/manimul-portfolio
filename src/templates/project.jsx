@@ -48,7 +48,16 @@ const WorkLink = styled(Link)`
     display: block;
     text-align: center;
 `
+const Tag = styled("span")`
+   background-color:blue;
+   margin-right:1rem;
+   padding:1rem;
+`
 
+const TagContainer = styled("div")`
+max-width: 550px;
+margin: 0 auto;
+`
 
 const Project = ({ project, meta }) => {
     return (
@@ -95,6 +104,13 @@ const Project = ({ project, meta }) => {
                 <ProjectTitle>
                     {RichText.render(project.project_title)}
                 </ProjectTitle>
+                {project._meta.tags && (
+                    <TagContainer >
+                {project._meta.tags.map((tag, i) => (
+                    <Tag>{tag}</Tag>
+                ))}
+                    </TagContainer >
+                )}
                 {project.project_hero_image && (
                     <ProjectHeroContainer>
                         <img src={project.project_hero_image.url} alt="bees" />
@@ -140,6 +156,7 @@ export const query = graphql`
                         project_description
                         _meta {
                             uid
+                            tags
                         }
                     }
                 }

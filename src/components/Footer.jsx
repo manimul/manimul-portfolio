@@ -13,7 +13,7 @@ const FooterContainer = styled("div")`
     align-items: center;
 
     svg {
-        max-width: 50px;
+        max-width: 200px;
     }
 `
 
@@ -28,19 +28,9 @@ const FooterAuthor = styled("a")`
 
      &:hover {
          color: ${colors.blue900};
-
-        .FooterSpooch {
-            animation-name: rotate;
-            animation-duration: 1.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
     }
 
-    @keyframes rotate {
-        from {transform: rotate(0deg);}
-        to {transform: rotate(360deg);}
-    }
+  
 `
 
 const FooterSpooch = styled("img")`
@@ -54,8 +44,7 @@ const Footer = () => (
             <Logo />
         </Link>
         <FooterAuthor href="https://www.marguerite.io/?utm_source=prist&utm_medium=footer&utm_campaign=prist_starter">
-            © 2019 — Designed & developed by Marguerite Roth
-            <FooterSpooch className="FooterSpooch" src={spooch} />
+            © 2020 — Built using the Gatsby and Prismic Prist template
         </FooterAuthor>
     </FooterContainer>
 )
