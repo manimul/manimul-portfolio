@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Manimul | The Portfolio of Mark Niklasson Mulvaney`,
-        description: `A starter powered by Gatsby and Prismic to showcase portfolios and blogs.`,
-    author: `Mark Niklasson Mulvaney`,
+    title: `Manimul | Portfolio`,
+        description: `A starter powered by Gatsby and Prismic`,
+    author: `Manimul`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -43,13 +43,13 @@ module.exports = {
       },
     },
     // https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/
-    {
-        resolve: `gatsby-plugin-google-analytics`,
-        options: {
-            trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
-            head: true,
-        },
-    },
+    //{
+    //    resolve: `gatsby-plugin-google-analytics`,
+     //   options: {
+     //       trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+     //       head: true,
+     //   },
+   // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
