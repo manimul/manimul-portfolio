@@ -24,9 +24,12 @@ const ProjectHeroContainer = styled("div")`
 `
 
 const ProjectTitle = styled("div") `
-    max-width: 550px;
+    
     margin: 0 auto;
     text-align: center;
+    h1{
+        margin-bottom:1rem;
+    }
 `
 
 const ProjectBody = styled("div")`
@@ -49,14 +52,19 @@ const WorkLink = styled(Link)`
     text-align: center;
 `
 const Tag = styled("span")`
-   background-color:blue;
-   margin-right:1rem;
-   padding:1rem;
+   background-color:#bfd8ff;
+   font-size:.8rem;
+   border-radius: 100px;
+   margin-right:.5rem;
+   padding:.5rem 1rem;
+   margin-bottom:.5rem;
+   display:inline-block;
 `
 
 const TagContainer = styled("div")`
-max-width: 550px;
-margin: 0 auto;
+display: block;
+margin: 0 auto 1rem;
+text-align:center;
 `
 
 const Project = ({ project, meta }) => {
